@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: tlc_raw
+    database: AwsDataCatalog
+    schema: nyc_tlc
+    tables:
+      - name: tlc_2015_latlon
+      - name: taxi_zones
