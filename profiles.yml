@@ -1,0 +1,10 @@
+tlc_warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      s3_staging_dir: s3://geoff-tlc-staging/dbt-staging/
+      region_name: us-east-1
+      database: AwsDataCatalog
+      schema: nyc_tlc    # the db where gtp_tlc_data/par live
+      threads: 4
